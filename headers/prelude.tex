@@ -1,0 +1,39 @@
+\documentclass[answers]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{mathtools, amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{tcolorbox}
+\usepackage{tikz}
+%\usepackage[margin=1in]{geometry}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notes}{Notes}[section]
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{.8,.8,1}
+
+\long\def\/*#1*/{}
+%\renewcommand{\qedsymbol}{$\filledbox$}
+\/*\usepackage{background}
+\usepackage{blindtext}
+*\backgroundsetup{
+    scale=1,
+    angle=0,
+    opacity=1,
+    contents={\begin{tikzpicture}[remember picture,overlay]
+                \path [left color = mauve,middle color = mauve!30, right color = white]
+                (current page.south west)rectangle (current page.north east);   % Adjust the position of the logo.
+            \end{tikzpicture}}
+}*/
