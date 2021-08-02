@@ -4,11 +4,11 @@
 
 \begin{enumerate}
       \item
-            In a surjective ring homomorphism $f:A \to B$, the ideals $J$
-            of $B$ and the ideals $I=f^{-1}(J)$ are in one-to-one
-            correspondence. When we need to think about ideals of $A$
-            containing $I$, we can work on $B=A/I$: if $I'$ is any ideal of
-            $A$ then $f(I')$ is an ideal of $B$ with $f^{-1}(f(I'))=I+I'$,
+            In a surjective ring homomorphism $f:A \to A/I$, the ideals $J$
+            of $A/I$ and the ideals $f^{-1}(J)$ of $A$ are in one-to-one
+            correspondence. (lattice isomorphism theorem) When we need to think about ideals of $A$
+            containing $I$, we can work on $A/I$: if $I'$ is any ideal of
+            $A$ then $f(I')$ is an ideal of $A/I$ with $f^{-1}(f(I'))=I+I'$,
             and $f(I') = (I+I')/I$.
       \item
             For $a \in A$, $(a)=(1)$ iff $a$ has an inverse in A.
@@ -56,5 +56,10 @@
             $a$ is irreducible iff $aA$ is maximal among proper principal ideals
             and $a$ is prime if $aA$ is a prime ideal.
       \item
-
+            $A=\mathbb{Z}[\sqrt{-5}]=\mathbb{Z}[X]/(X^2+5)$; then setting
+            $k=\mathbb{Z}/2\mathbb{Z}$ we have
+            \begin{center}
+                  $A/2A=\mathbb{Z}[X]/(2,X^2+5)=k[X]/(X^2-1)=k[X]/(X-1)^2$.
+            \end{center}
+            Then $P=(2,1-\sqrt{-5})$ is a maximal ideal of $A$ containing $2$.
 \end{enumerate}
