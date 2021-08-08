@@ -59,6 +59,19 @@
                         theorem, the Nullstellensatz, the polynomial nature of the Hilbert function and the syzygy theorem),
                         all of which played enormous role in development of commutative algebra.
             \end{enumerate}
+            \input{theorems/Eis1-thb1-hilbert-basis.tex}
       \item
-            \input{theorems/th1-hilbert-basis.tex}
+            A graded ring is a ring $R$ together with the direct sum decomposition
+            $$R=R_0\oplus R_1 \oplus R_2\oplus\cdots \text{ as abelian groups},$$
+            such that $R_iR_j \subset R_{i+j}$ for $i,j\geq 0$.
+            \input{theorems/Eis1-thb2.tex}
+            Hilbert's finiteness result follows by taking $R=S^G$ above.
+      \item
+            Given a subset $I\subset k[x_1,\ldots,x_n]$, the algebraic subset of $k^n$
+            $$Z(I)=\{(a_1,\ldots,a_n)\in k^n | f(a_1,\ldots,a_n)=0\text{ for all }f\in I\}$$
+            is called \textbf{algebraic variety} if it is \textbf{irreducible} (not the union of two smaller
+            algebraic subsets). Taking algebraic sets as closed sets, we obtain \textbf{Zariski topology} on $k^n$.
+            Given a set $X\subset k^n$, $$I(X) =\{f\in k[x_1,\ldots,x_n]|f(a_1,\ldots,a_n)=0\text{ for all }
+                  (a_1,\ldots,a_n)\in X\}$$ is an ideal of $k[x_1,\ldots,x_n]$. Identifying polynomial functions that
+            agree at all points of a set $X$, we get the \textbf{coordinate ring} $A(X)=k[x_1,\ldots,x_n]/I(X)$ of X.
 \end{enumerate}
